@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./button.styles.scss"
+import "./button.styles.scss";
 //default
 //inverted
 //google
@@ -12,14 +12,12 @@ const BUTTON_TYPE_CLASSES = {
 
 const Button = ({ children, buttonType, ...otherProps }) => {
   return (
-    <div>
-      <button
-        className={`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`}
-        {...otherProps}
-      >
-        {children}
-      </button>
-    </div>
+    <button
+      className={`button-container ${BUTTON_TYPE_CLASSES[buttonType]}`}
+      {...otherProps}
+    >
+      {children}
+    </button>
   );
 };
 
